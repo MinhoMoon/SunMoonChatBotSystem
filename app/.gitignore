@@ -1,1 +1,3 @@
 /build
+# 깃허브 업로드 할때 google-services.json 숨기기
+google-services.json

@@ -88,7 +88,7 @@ public class Register extends AppCompatActivity
                 });
     }
 
-    public void goSetReset() // 이메일과 패스워드 입력칸에 입력된 값 초기화 진행한다.
+    private void goSetReset() // 이메일과 패스워드 입력칸에 입력된 값 초기화 진행한다.
     {
         tbRegEmail.setText("");
         tbRegPass.setText("");

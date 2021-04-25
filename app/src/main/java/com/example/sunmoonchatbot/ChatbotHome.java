@@ -62,12 +62,12 @@ public class ChatbotHome extends AppCompatActivity
         else if(questionText.equals("음식점"))
         {
             //tbSetText.setText("학교주변에는 느티나무집, 이모네밥, 맘스터치, 화정관이 있습니다.");
-            DataBox("Food");
+            DataBox("F-000");
         }
         else if(questionText.equals("e강의동"))
         {
             //tbSetText.setText("https://lms.sunmoon.ac.kr/ilos/main/main_form.acl");
-            DataBox("eStudy");
+            DataBox("display");
         }
         else if(questionText.equals("학사정보"))
         {

@@ -269,6 +269,16 @@ public class ChatbotHome extends AppCompatActivity
             //tbSetText.setText("제주복돼지 전화번호는 041-534-0286입니다.");
             DataBox("F-041");
         }
+        else if(questionText.equals("제주복돼지"))
+        {
+            //tbSetText.setText("제주복돼지 전화번호는 041-534-0286입니다.");
+            DataBox("F-041");
+        }
+        else if(questionText.equals("국어국문학과"))
+        {
+            //tbSetText.setText("국어국문학과 전화번호는 041-530-2403입니다.");
+            DataBox("kor");
+        }
         else if(questionText.equals("e강의동"))
         {
             //tbSetText.setText("https://lms.sunmoon.ac.kr/ilos/main/main_form.acl");

@@ -274,11 +274,6 @@ public class ChatbotHome extends AppCompatActivity
             //tbSetText.setText("국어국문학과 전화번호는 041-530-2403입니다.");
             DataBox("kor");
         }
-        else if(questionText.equals("국어국문학과"))
-        {
-            //tbSetText.setText("국어국문학과 전화번호는 041-530-2403입니다.");
-            DataBox("kor");
-        }
         else if(questionText.equals("사회복지학과"))
         {
             //tbSetText.setText("사회복지학과 전화번호는 041-530-2509입니다.");

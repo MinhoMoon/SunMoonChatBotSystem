@@ -274,6 +274,196 @@ public class ChatbotHome extends AppCompatActivity
             //tbSetText.setText("국어국문학과 전화번호는 041-530-2403입니다.");
             DataBox("kor");
         }
+        else if(questionText.equals("국어국문학과"))
+        {
+            //tbSetText.setText("국어국문학과 전화번호는 041-530-2403입니다.");
+            DataBox("kor");
+        }
+        else if(questionText.equals("사회복지학과"))
+        {
+            //tbSetText.setText("사회복지학과 전화번호는 041-530-2509입니다.");
+            DataBox("welfare");
+        }
+        else if(questionText.equals("상담 산업심리학과"))
+        {
+            //tbSetText.setText("상담 산업심리학과 전화번호는 041-530-2568입니다.");
+            DataBox("psychology");
+        }
+        else if(questionText.equals("역사영상콘텐츠학부"))
+        {
+            //tbSetText.setText("역사 영상콘텐츠학부 전화번호는 041-530-2455입니다.");
+            DataBox("hcc");
+        }
+        else if(questionText.equals("미디어커뮤니케이션학부"))
+        {
+            //tbSetText.setText("미디어커뮤니케이션학부 전화번호는 041-530-2506/2054입니다.");
+            DataBox("communication");
+        }
+        else if(questionText.equals("법 경찰학과"))
+        {
+            //tbSetText.setText("법 경찰학과 전화번호는 041-530-8403/8404입니다.");
+            DataBox("dlp");
+        }
+        else if(questionText.equals("글로벌한국학과"))
+        {
+            //tbSetText.setText("글로벌한국학과 전화번호는 041-530-2541입니다.");
+            DataBox("gks");
+        }
+        else if(questionText.equals("시각디자인학과"))
+        {
+            //tbSetText.setText("시각디자인학과 전화번호는 041-530-2594/2564입니다.");
+            DataBox("design");
+        }
+        else if(questionText.equals("행정 공기업학과"))
+        {
+            //tbSetText.setText("행정공기업학과 전화번호는 041-530-2593입니다.");
+            DataBox("public");
+        }
+        else if(questionText.equals("외국어 자율전공학부"))
+        {
+            //tbSetText.setText("외국어 자율전공학부 전화번호는 041-530-2424입니다.");
+            DataBox("uem");
+        }
+        else if(questionText.equals("경영학과"))
+        {
+            //tbSetText.setText("경영학과 전화번호는 041-530-2507/2567입니다.");
+            DataBox("mgt");
+        }
+        else if(questionText.equals("IT경영학과"))
+        {
+            //tbSetText.setText("IT경영학과 전화번호는 041-530-2597입니다.");
+            DataBox("itm");
+        }
+        else if(questionText.equals("국제경제통상학과"))
+        {
+            //tbSetText.setText("국제경제통상학과 전화번호는 041-530-2556입니다.");
+            DataBox("economic");
+        }
+        else if(questionText.equals("글로벌관광학과"))
+        {
+            //tbSetText.setText("글로벌관광학과 전화번호는 041-530-2551/8561입니다.");
+            DataBox("tour");
+        }
+        else if(questionText.equals("국제관계학과"))
+        {
+            //tbSetText.setText("국제관계학과 전화번호는 041-530-2505입니다.");
+            DataBox("international");
+        }
+        else if(questionText.equals("신학과"))
+        {
+            //tbSetText.setText("신학과 전화번호는 041-530-2686입니다.");
+            DataBox("theolove");
+        }
+        else if(questionText.equals("제약생명공학과"))
+        {
+            //tbSetText.setText("제약생명공학과 전화번호는 041-530-2270/2251입니다.");
+            DataBox("btpe");
+        }
+        else if(questionText.equals("식품과학부"))
+        {
+            //tbSetText.setText("식품과학부 전화번호는 041-530-2278입니다.");
+            DataBox("food");
+        }
+        else if(questionText.equals("수산생명의학과"))
+        {
+            //tbSetText.setText("수산생명의학과 전화번호는 041-530-2280입니다.");
+            DataBox("marine");
+        }
+        else if(questionText.equals("간호학과"))
+        {
+            //tbSetText.setText("간호학과 전화번호는 041-530-2764입니다.");
+            DataBox("nurs");
+        }
+        else if(questionText.equals("물리치료학과"))
+        {
+            //tbSetText.setText("물리치료학과 전화번호는 041-530-2765입니다.");
+            DataBox("physical");
+        }
+        else if(questionText.equals("치위생학과"))
+        {
+            //tbSetText.setText("치위생학과 전화번호는 041-530-2766입니다.");
+            DataBox("dental");
+        }
+        else if(questionText.equals("응급구조학과"))
+        {
+            //tbSetText.setText("응급구조학과 전화번호는 041-530-2763입니다.");
+            DataBox("emt");
+        }
+        else if(questionText.equals("스포츠과학과"))
+        {
+            //tbSetText.setText("스포츠과학과 전화번호는 041-530-2290/2919입니다.");
+            DataBox("sports");
+        }
+        else if(questionText.equals("무도경호학과"))
+        {
+            //tbSetText.setText("무도경호학과 전화번호는 041-530-2298/2272입니다.");
+            DataBox("martial");
+        }
+        else if(questionText.equals("건축학부"))
+        {
+            //tbSetText.setText("건축학부 전화번호는 041-530-2320/2652입니다.");
+            DataBox("archi");
+        }
+        else if(questionText.equals("건설시스템안전공학과"))
+        {
+            //tbSetText.setText("건설시스템안전공학과 전화번호는 041-530-2319입니다.");
+            DataBox("cisse");
+        }
+        else if(questionText.equals("기계공학과"))
+        {
+            //tbSetText.setText("기계공학과 전화번호는 041-530-2303입니다.");
+            DataBox("mecha");
+        }
+        else if(questionText.equals("정보통신공학과"))
+        {
+            //tbSetText.setText("정보통신공학과 전화번호는 041-530-2309/2308입니다.");
+            DataBox("information");
+        }
+        else if(questionText.equals("디스플레이반도체공학과"))
+        {
+            //tbSetText.setText("디스플레이반도체공학과 전화번호는 041-530-2208/2204입니다.");
+            DataBox("display");
+        }
+        else if(questionText.equals("전자공학과"))
+        {
+            //tbSetText.setText("전자공학과 전화번호는 041-530-2313/8094입니다.");
+            DataBox("electric");
+        }
+        else if(questionText.equals("신소재공학과"))
+        {
+            //tbSetText.setText("신소재공학과 전화번호는 041-530-2312/2306입니다.");
+            DataBox("ame");
+        }
+        else if(questionText.equals("환경생명화학공학과"))
+        {
+            //tbSetText.setText("환경생명화학공학과 전화번호는 041-530-2314/2318입니다.");
+            DataBox("ebce");
+        }
+        else if(questionText.equals("산업경영공학과"))
+        {
+            //tbSetText.setText("산업경영공학과 전화번호는 041-530-2317입니다.");
+            DataBox("ie");
+        }
+        else if(questionText.equals("스마트자동차공학부"))
+        {
+            //tbSetText.setText("스마트자동차공학부 전화번호는 041-530-8330/8331입니다.");
+            DataBox("smartcar");
+        }
+        else if(questionText.equals("컴퓨터공학부"))
+        {
+            //tbSetText.setText("컴퓨터공학부 전화번호는 041-530-2211~2213입니다.");
+            DataBox("cs");
+        }
+        else if(questionText.equals("AI소프트웨어학과"))
+        {
+            //tbSetText.setText("AI소프트웨어학과 전화번호는 041-530-8480입니다.");
+            DataBox("ais");
+        }
+        else if(questionText.equals("IT교육학부"))
+        {
+            //tbSetText.setText(IT교육학부 전화번호는 041-530-8589입니다.");
+            DataBox("itedu");
+        }
         else if(questionText.equals("e강의동"))
         {
             //tbSetText.setText("https://lms.sunmoon.ac.kr/ilos/main/main_form.acl");

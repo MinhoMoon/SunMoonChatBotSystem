@@ -461,18 +461,18 @@ public class ChatbotHome extends AppCompatActivity
         }
         else if(questionText.equals("e강의동"))
         {
-            //tbSetText.setText("https://lms.sunmoon.ac.kr/ilos/main/main_form.acl");
-            DataBox("display");
+            tbSetText.setText("https://lms.sunmoon.ac.kr/ilos/main/main_form.acl");
+            //DataBox("display");
         }
         else if(questionText.equals("학사정보"))
         {
-            //tbSetText.setText("https://lily.sunmoon.ac.kr/Page/Story/SMEvents.aspx");
-            DataBox("StudentInfo");
+            tbSetText.setText("https://lily.sunmoon.ac.kr/Page/Story/SMEvents.aspx");
+            //DataBox("StudentInfo");
         }
         else if(questionText.equals("수강신청"))
         {
-            //tbSetText.setText("https://sws.sunmoon.ac.kr/UA/Course/CourseUpdate.aspx");
-            DataBox("StudyAdd");
+            tbSetText.setText("https://sws.sunmoon.ac.kr/UA/Course/CourseUpdate.aspx");
+            //DataBox("StudyAdd");
         }
         else
         {

@@ -69,11 +69,16 @@ public class ChatbotHome extends AppCompatActivity
             try {
                 Response response = Weather.get();
 
-                String value = "현재온도: " + (response.getMain().getTemp() - 273.15) + "\n" +
+                /*String value = "현재온도: " + (response.getMain().getTemp() - 273.15) + "\n" +
                         "현재습도: " + (response.getMain().getHumidity()) + "\n" +
                         "날씨: " + (response.getWeather().get(0).getMain()) + "\n" +
                         "상세 날씨 설명: " + (response.getWeather().get(0).getDescription()) + "\n" +
                         "바람: " + (response.getWind().getSpeed()) + "\n" +
+                        "구름: " +  (response.getClouds().getAll());*/
+                String value = "현재온도: " + (response.getMain().getTemp() - 273.15) + "°C\n" +
+                        "현재습도: " + (response.getMain().getHumidity()) + "%\n" +
+                        "날씨: " + (response.getWeather().get(0).getMain()) + "\n" +
+                        "바람: " + (response.getWind().getSpeed()) + "m/s\n" +
                         "구름: " +  (response.getClouds().getAll());
                 tbSetText.setText(value);
             } catch (Exception exception) {

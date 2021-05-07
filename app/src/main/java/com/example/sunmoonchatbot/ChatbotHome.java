@@ -76,7 +76,7 @@ public class ChatbotHome extends AppCompatActivity
                 tbSetText.setText(exception.getMessage());
             }
             //tbSetText.setText("오늘 맑아요");
-            DataBox("Weather");
+            //DataBox("Weather");
         }
         else if(questionText.equals("음식점"))
         {

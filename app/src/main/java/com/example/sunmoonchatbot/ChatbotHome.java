@@ -9,6 +9,9 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
+import Weather.Weather;
+import Weather.Response;
+
 
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -34,6 +37,7 @@ public class ChatbotHome extends AppCompatActivity
         tbSendText = (EditText) findViewById(R.id.get_sendtext); // 질문내용을 입력받는다.
         getSend = (Button) findViewById(R.id.get_send); // 버튼을 클릭하면 답변처리를 진행한다.
 
+
         getSend.setOnClickListener(new View.OnClickListener()
         {
             @Override
@@ -44,6 +48,8 @@ public class ChatbotHome extends AppCompatActivity
             }
         });
     }
+
+
 
     public void QuestionTable()
     {
@@ -56,6 +62,19 @@ public class ChatbotHome extends AppCompatActivity
         }
         else if(questionText.equals("날씨"))
         {
+            try {
+                Response response = Weather.get();
+
+                String value = "현재온도: " + (response.getMain().getTemp() - 273.15) + "\n" +
+                        "현재습도: " + (response.getMain().getHumidity()) + "\n" +
+                        "날씨: " + (response.getWeather().get(0).getMain()) + "\n" +
+                        "상세 날씨 설명: " + (response.getWeather().get(0).getDescription()) + "\n" +
+                        "바람: " + (response.getWind().getSpeed()) + "\n" +
+                        "구름: " +  (response.getClouds().getAll());
+                tbSetText.setText(value);
+            } catch (Exception exception) {
+                tbSetText.setText(exception.getMessage());
+            }
             //tbSetText.setText("오늘 맑아요");
             DataBox("Weather");
         }

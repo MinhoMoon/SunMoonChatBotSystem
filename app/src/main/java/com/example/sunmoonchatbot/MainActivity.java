@@ -27,6 +27,7 @@ public class MainActivity extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+
         firebaseAuth = FirebaseAuth.getInstance();
         tbEmail = (EditText) findViewById(R.id.get_id); // get_id에 입력된 값을 tbEmail으로 연동한다.
         tbPassword = (EditText) findViewById(R.id.get_pass); // get_pass에 입력된 값을 tbPassword로 연동한다.

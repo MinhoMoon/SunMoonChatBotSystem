@@ -1,7 +1,7 @@
 package Weather;
 
 import java.io.IOException;
-import com.example.sunmoonchatbot.weatherResponse;
+import Weather.Response;
 
 public class Weather { // retrofit 데이터 호출
     public static Response get(String locate) throws IOException { // 위치 대입

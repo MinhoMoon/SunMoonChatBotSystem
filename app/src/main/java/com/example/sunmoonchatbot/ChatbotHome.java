@@ -4,6 +4,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.os.StrictMode;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -31,6 +32,9 @@ public class ChatbotHome extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_chatbot_home);
         // DB 질의응답
+
+        StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
+        StrictMode.setThreadPolicy(policy);
 
         firebasedb = FirebaseDatabase.getInstance();
         tbSetText = (TextView) findViewById(R.id.set_text);

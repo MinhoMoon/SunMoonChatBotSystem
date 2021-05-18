@@ -59,7 +59,16 @@ public class MainActivity extends AppCompatActivity
     {
         String email = tbEmail.getText().toString(); // tbEmail에 입력된 값을 가져온다.
         String password = tbPassword.getText().toString(); // // tbPassword에 입력된 값을 가져온다.
-
+        if(email == null || email.equals("")) // 이메일이 null 값인지 체크하고, 아무런값이 입력이 안된지 확인해준다.
+        {
+            Toast.makeText(this, "당신은 이메일 값을 입력해야 합니다.", Toast.LENGTH_LONG).show(); // 짧게 아래에 텍스트 형식으로 토스트 문구가 출력한다.
+            return;
+        }
+        if(password == null || password.equals("") || password.length() < 8) // 패스워드 값이 null 값인지 체크하고, 아무런값이 입력이 안된지 확인해준다. 그리고, 8자리 미만인지 체크한다.
+        {
+            Toast.makeText(this, "당신은 비밀번호를 입력해야 합니다.",Toast.LENGTH_LONG).show();
+            return;
+        }
         firebaseAuth.signInWithEmailAndPassword(email, password).
                 // signInWithEmailAndPassword는 이메일, 패스워드를 가져와서 파이어베이스로 보낸 뒤, 정상적으로 존재하는 계정인지 확인한 후 로그인 성공, 실패여부를 가져다준다.
                         addOnCompleteListener(MainActivity.this, new OnCompleteListener<AuthResult>()

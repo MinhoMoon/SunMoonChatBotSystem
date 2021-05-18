@@ -73,8 +73,8 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="306dp"
-        android:layout_height="50dp"
+        android:layout_width="313dp"
+        android:layout_height="47dp"
         android:layout_marginTop="304dp"
         android:gravity="center"
         android:text="선문챗봇"

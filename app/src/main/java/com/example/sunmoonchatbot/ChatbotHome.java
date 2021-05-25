@@ -2,12 +2,14 @@ package com.example.sunmoonchatbot;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.graphics.Color;
 import android.os.Bundle;
 import android.os.StrictMode;
 import android.view.Gravity;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.LinearLayout;
@@ -62,6 +64,11 @@ public class ChatbotHome extends AppCompatActivity
     public void QuestionTable()
     {
         String questionText = tbSendText.getText().toString(); // 입력받은 질문 내용을 퀘션텍스트 스트링 형태로 저장한다.
+
+        if(questionText.equals("test"))
+        {
+            ViewText("내용1", "내용2");
+        }
 
         if(questionText == null || questionText.equals("")) // 내용이 null 값이거나 아무내용이 없을때 실행한다.
         {
@@ -149,7 +156,7 @@ public class ChatbotHome extends AppCompatActivity
         }
         else if(questionText.equals("두찜"))
         {
-            //tbSetText.setText("두찜 전화번호는 041-546 7737입니다.");
+            //tbSetText.setText("두찜 전화번호는 041-546 7737입니다.");
             DataBox("F-011");
         }
         else if(questionText.equals("몬스터꼬맹이김밥"))
@@ -541,7 +548,6 @@ public class ChatbotHome extends AppCompatActivity
         });
         return;
     }
-
     public void ViewText(String Q, String A)
     {
         LinearLayout layout = (LinearLayout) findViewById(R.id.chatbot);
@@ -552,16 +558,16 @@ public class ChatbotHome extends AppCompatActivity
         tv_question.setText(tbSendText.getText().toString());
         tv_question.setTextSize(20);
         tv_question.setTextColor(Color.parseColor("#000000"));
-        tv_question.setBackgroundColor(Color.parseColor("#F4E8BB"));
-        tv_question.setGravity(Gravity.LEFT);
+        tv_question.setBackgroundResource(R.drawable.mymsg);
+        tv_question.setGravity(Gravity.RIGHT);
         set_text.addView(tv_question);
 
         TextView tv_answer = new TextView(this);
         tv_answer.setText(A);
         tv_answer.setTextSize(20);
         tv_answer.setTextColor(Color.parseColor("#000000"));
-        tv_answer.setBackgroundColor(Color.parseColor("#B9E4EC"));
-        tv_answer.setGravity(Gravity.RIGHT);
+        tv_answer.setBackgroundResource(R.drawable.chatbotmsg);
+        tv_answer.setGravity(Gravity.LEFT);
         set_text.addView(tv_answer);
         layout.setBackgroundColor(0);
         layout.addView(set_text);

@@ -3,11 +3,14 @@ package com.example.sunmoonchatbot;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.graphics.Color;
 import android.os.Bundle;
 import android.os.StrictMode;
+import android.view.Gravity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 import Weather.Weather;
@@ -20,12 +23,14 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
+import static android.os.SystemClock.sleep;
+
 public class ChatbotHome extends AppCompatActivity
 {
     FirebaseDatabase firebasedb;
-    TextView tbSetText;
     EditText tbSendText;
     Button getSend;
+
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
@@ -37,10 +42,8 @@ public class ChatbotHome extends AppCompatActivity
         StrictMode.setThreadPolicy(policy);
 
         firebasedb = FirebaseDatabase.getInstance();
-        tbSetText = (TextView) findViewById(R.id.set_text);
         tbSendText = (EditText) findViewById(R.id.get_sendtext); // 질문내용을 입력받는다.
         getSend = (Button) findViewById(R.id.get_send); // 버튼을 클릭하면 답변처리를 진행한다.
-
 
         getSend.setOnClickListener(new View.OnClickListener()
         {
@@ -51,6 +54,7 @@ public class ChatbotHome extends AppCompatActivity
                 QuestionTable();
             }
         });
+
     }
 
 
@@ -64,7 +68,7 @@ public class ChatbotHome extends AppCompatActivity
             Toast.makeText(this, "당신은 질문내용을 입력하지 않았습니다.", Toast.LENGTH_LONG).show(); // 토스트 메세지 안내출력.
             return;
         }
-        else if(questionText.equals("날씨"))
+        else if(questionText.equals("날씨") || questionText.equals("weather"))
         {
             try {
                 Response response = Weather.get();
@@ -80,14 +84,15 @@ public class ChatbotHome extends AppCompatActivity
                         "날씨: " + (response.getWeather().get(0).getMain()) + "\n" +
                         "바람: " + (response.getWind().getSpeed()) + "m/s\n" +
                         "구름: " +  (response.getClouds().getAll());
-                tbSetText.setText(value);
+                //tbSetText.setText(value);
+                ViewText("날씨",value);
             } catch (Exception exception) {
-                tbSetText.setText(exception.getMessage());
+                //tbSetText.setText(exception.getMessage());
             }
             //tbSetText.setText("오늘 맑아요");
             //DataBox("Weather");
         }
-        else if(questionText.equals("음식점"))
+        else if(questionText.equals("음식점"))//날씨
         {
             //tbSetText.setText("학교주변에는 느티나무집, 이모네밥, 맘스터치, 화정관이 있습니다.");
             DataBox("F-000");
@@ -489,17 +494,17 @@ public class ChatbotHome extends AppCompatActivity
         }
         else if(questionText.equals("e강의동"))
         {
-            tbSetText.setText("https://lms.sunmoon.ac.kr/ilos/main/main_form.acl");
+            //tbSetText.setText("https://lms.sunmoon.ac.kr/ilos/main/main_form.acl");
             //DataBox("display");
         }
         else if(questionText.equals("학사정보"))
         {
-            tbSetText.setText("https://lily.sunmoon.ac.kr/Page/Story/SMEvents.aspx");
+            //tbSetText.setText("https://lily.sunmoon.ac.kr/Page/Story/SMEvents.aspx");
             //DataBox("StudentInfo");
         }
         else if(questionText.equals("수강신청"))
         {
-            tbSetText.setText("https://sws.sunmoon.ac.kr/UA/Course/CourseUpdate.aspx");
+            //tbSetText.setText("https://sws.sunmoon.ac.kr/UA/Course/CourseUpdate.aspx");
             //DataBox("StudyAdd");
         }
         else
@@ -524,7 +529,8 @@ public class ChatbotHome extends AppCompatActivity
                     String getData = (String) ds.getValue(); // answer의 해당하는 데이터를 가져온다.
                     allData = allData + getData; // 하위노드 값 저장진행
                 }
-                tbSetText.setText(allData); // 출력한다.
+                ViewText(answer, allData);
+
             }
 
             @Override
@@ -534,5 +540,30 @@ public class ChatbotHome extends AppCompatActivity
             }
         });
         return;
+    }
+
+    public void ViewText(String Q, String A)
+    {
+        LinearLayout layout = (LinearLayout) findViewById(R.id.chatbot);
+        LinearLayout set_text = new LinearLayout(this);
+        set_text.setOrientation(LinearLayout.VERTICAL);
+
+        TextView tv_question = new TextView(this);
+        tv_question.setText(tbSendText.getText().toString());
+        tv_question.setTextSize(20);
+        tv_question.setTextColor(Color.parseColor("#000000"));
+        tv_question.setBackgroundColor(Color.parseColor("#F4E8BB"));
+        tv_question.setGravity(Gravity.LEFT);
+        set_text.addView(tv_question);
+
+        TextView tv_answer = new TextView(this);
+        tv_answer.setText(A);
+        tv_answer.setTextSize(20);
+        tv_answer.setTextColor(Color.parseColor("#000000"));
+        tv_answer.setBackgroundColor(Color.parseColor("#B9E4EC"));
+        tv_answer.setGravity(Gravity.RIGHT);
+        set_text.addView(tv_answer);
+        layout.setBackgroundColor(0);
+        layout.addView(set_text);
     }
 }

@@ -508,11 +508,13 @@ public class ChatbotHome extends AppCompatActivity
         {
             //tbSetText.setText("https://lily.sunmoon.ac.kr/Page/Story/SMEvents.aspx");
             //DataBox("StudentInfo");
+            ViewText("학사정보","https://lily.sunmoon.ac.kr/Page/Story/SMEvents.aspx");
         }
         else if(questionText.equals("수강신청"))
         {
             //tbSetText.setText("https://sws.sunmoon.ac.kr/UA/Course/CourseUpdate.aspx");
             //DataBox("StudyAdd");
+            ViewText("수강신청","https://sws.sunmoon.ac.kr/UA/Course/CourseUpdate.aspx");
         }
         else
         {

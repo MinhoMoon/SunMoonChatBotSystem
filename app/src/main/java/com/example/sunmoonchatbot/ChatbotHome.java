@@ -65,10 +65,10 @@ public class ChatbotHome extends AppCompatActivity
     {
         String questionText = tbSendText.getText().toString(); // 입력받은 질문 내용을 퀘션텍스트 스트링 형태로 저장한다.
 
-        if(questionText.equals("test"))
+        /*if(questionText.equals("test"))
         {
-            ViewText("내용1", "내용2");
-        }
+            ViewText("내용1", "내용2dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd2a");
+        }*/
 
         if(questionText == null || questionText.equals("")) // 내용이 null 값이거나 아무내용이 없을때 실행한다.
         {

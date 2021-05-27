@@ -13,6 +13,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.LinearLayout;
+import android.widget.ScrollView;
 import android.widget.TextView;
 import android.widget.Toast;
 import Weather.Weather;
@@ -32,6 +33,7 @@ public class ChatbotHome extends AppCompatActivity
     FirebaseDatabase firebasedb;
     EditText tbSendText;
     Button getSend;
+    ScrollView getScroll;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -46,6 +48,7 @@ public class ChatbotHome extends AppCompatActivity
         firebasedb = FirebaseDatabase.getInstance();
         tbSendText = (EditText) findViewById(R.id.get_sendtext); // 질문내용을 입력받는다.
         getSend = (Button) findViewById(R.id.get_send); // 버튼을 클릭하면 답변처리를 진행한다.
+        getScroll = (ScrollView) findViewById(R.id.scroll);
 
         getSend.setOnClickListener(new View.OnClickListener()
         {
@@ -499,11 +502,6 @@ public class ChatbotHome extends AppCompatActivity
             //tbSetText.setText(IT교육학부 전화번호는 041-530-8589입니다.");
             DataBox("itedu");
         }
-        else if(questionText.equals("e강의동"))
-        {
-            //tbSetText.setText("https://lms.sunmoon.ac.kr/ilos/main/main_form.acl");
-            //DataBox("display");
-        }
         else if(questionText.equals("학사정보"))
         {
             //tbSetText.setText("https://lily.sunmoon.ac.kr/Page/Story/SMEvents.aspx");
@@ -516,9 +514,16 @@ public class ChatbotHome extends AppCompatActivity
             //DataBox("StudyAdd");
             ViewText("수강신청","https://sws.sunmoon.ac.kr/UA/Course/CourseUpdate.aspx");
         }
+        else if(questionText.equals("e강의동") || questionText.equals("E강의동"))
+        {
+            //tbSetText.setText("https://sws.sunmoon.ac.kr/UA/Course/CourseUpdate.aspx");
+            //DataBox("StudyAdd");
+            ViewText("e강의동","https://lms.sunmoon.ac.kr/ilos/main/main_form.acl");
+        }
         else
         {
-            Toast.makeText(this, "당신의 질문은 이해할 수 없습니다.", Toast.LENGTH_LONG).show(); // 토스트 메세지 안내출력.
+            ViewText("idk","당신의 질문을 이해할 수 없습니다.");
+            //Toast.makeText(this, "당신의 질문은 이해할 수 없습니다.", Toast.LENGTH_LONG).show(); // 토스트 메세지 안내출력.
         }
     }
 
@@ -573,5 +578,18 @@ public class ChatbotHome extends AppCompatActivity
         set_text.addView(tv_answer);
         layout.setBackgroundColor(0);
         layout.addView(set_text);
+        scrollD(); // 메세지가 띄워지면 자동으로 스크롤 다운 처리한다.
+    }
+
+    public void scrollD()
+    {
+        getScroll.post(new Runnable()
+        {
+            @Override
+            public void run()
+            {
+                getScroll.fullScroll(ScrollView.FOCUS_DOWN);
+            }
+        });
     }
 }

@@ -49,7 +49,7 @@ public class ChatbotHome extends AppCompatActivity
         tbSendText = (EditText) findViewById(R.id.get_sendtext); // 질문내용을 입력받는다.
         getSend = (Button) findViewById(R.id.get_send); // 버튼을 클릭하면 답변처리를 진행한다.
         getScroll = (ScrollView) findViewById(R.id.scroll);
-
+        WelcomeText();
         getSend.setOnClickListener(new View.OnClickListener()
         {
             @Override
@@ -554,6 +554,23 @@ public class ChatbotHome extends AppCompatActivity
             }
         });
         return;
+    }
+    public void WelcomeText()
+    {
+        LinearLayout layout = (LinearLayout) findViewById(R.id.chatbot);
+        LinearLayout set_text = new LinearLayout(this);
+        set_text.setOrientation(LinearLayout.VERTICAL);
+
+        TextView tv_answer = new TextView(this);
+        tv_answer.setText("안녕하세요! \n\n궁금한게 있으신가요??\n학과번호, 학교주변 음식점, 수강신청, e강의동, 학사정보 관련해서 질문해보세요.");
+        tv_answer.setTextSize(20);
+        tv_answer.setTextColor(Color.parseColor("#000000"));
+        tv_answer.setBackgroundResource(R.drawable.chatbotmsg);
+        tv_answer.setGravity(Gravity.LEFT);
+        set_text.addView(tv_answer);
+        layout.setBackgroundColor(0);
+        layout.addView(set_text);
+        scrollD(); // 메세지가 띄워지면 자동으로 스크롤 다운 처리한다.
     }
     public void ViewText(String Q, String A)
     {

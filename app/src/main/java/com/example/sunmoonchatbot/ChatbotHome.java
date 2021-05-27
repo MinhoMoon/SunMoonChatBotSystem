@@ -595,6 +595,7 @@ public class ChatbotHome extends AppCompatActivity
         set_text.addView(tv_answer);
         layout.setBackgroundColor(0);
         layout.addView(set_text);
+        tbSendText.setText("");
         scrollD(); // 메세지가 띄워지면 자동으로 스크롤 다운 처리한다.
     }
 

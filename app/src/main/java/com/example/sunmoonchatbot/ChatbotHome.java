@@ -372,7 +372,7 @@ public class ChatbotHome extends AppCompatActivity
             //tbSetText.setText("IT경영학과 전화번호는 041-530-2597입니다.");
             DataBox("itm");
         }
-        else if(questionText.equals("국제경제통상학과") || questionText.equals("국경통") || questionText.equals("국경통"))
+        else if(questionText.equals("국제경제통상학과") || questionText.equals("국경통"))
         {
             //tbSetText.setText("국제경제통상학과 전화번호는 041-530-2556입니다.");
             DataBox("economic");

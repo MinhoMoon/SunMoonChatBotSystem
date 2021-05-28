@@ -7,6 +7,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.os.StrictMode;
+import android.text.util.Linkify;
 import android.view.Gravity;
 import android.view.View;
 import android.view.ViewGroup;
@@ -592,6 +593,7 @@ public class ChatbotHome extends AppCompatActivity
         tv_answer.setTextColor(Color.parseColor("#000000"));
         tv_answer.setBackgroundResource(R.drawable.chatbotmsg);
         tv_answer.setGravity(Gravity.LEFT);
+        tv_answer.setAutoLinkMask(Linkify.ALL);
         set_text.addView(tv_answer);
         layout.setBackgroundColor(0);
         layout.addView(set_text);

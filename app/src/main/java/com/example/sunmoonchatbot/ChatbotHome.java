@@ -502,13 +502,13 @@ public class ChatbotHome extends AppCompatActivity
             //tbSetText.setText(IT교육학부 전화번호는 041-530-8589입니다.");
             DataBox("itedu");
         }
-        else if(questionText.equals("학사정보"))
+        else if(questionText.equals("학사정보") || questionText.equals("ㅎㅅㅈㅂ"))
         {
             //tbSetText.setText("https://lily.sunmoon.ac.kr/Page/Story/SMEvents.aspx");
             //DataBox("StudentInfo");
             ViewText("학사정보","https://lily.sunmoon.ac.kr/Page/Story/SMEvents.aspx");
         }
-        else if(questionText.equals("수강신청"))
+        else if(questionText.equals("수강신청") || questionText.equals("ㅅㄱㅅㅊ"))
         {
             //tbSetText.setText("https://sws.sunmoon.ac.kr/UA/Course/CourseUpdate.aspx");
             //DataBox("StudyAdd");

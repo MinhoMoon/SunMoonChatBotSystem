@@ -7,6 +7,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.os.StrictMode;
+import android.text.util.Linkify;
 import android.view.Gravity;
 import android.view.View;
 import android.view.ViewGroup;
@@ -312,187 +313,187 @@ public class ChatbotHome extends AppCompatActivity
             //tbSetText.setText("제주복돼지 전화번호는 041-534-0286입니다.");
             DataBox("F-041");
         }
-        else if(questionText.equals("국어국문학과") || questionText.equals("국문과") || questionText.equals("국문") || questionText.equals("ㄱㅁㄱ"))
+        else if(questionText.equals("국어국문학과") || questionText.equals("국문과") || questionText.equals("국문"))
         {
             //tbSetText.setText("국어국문학과 전화번호는 041-530-2403입니다.");
             DataBox("kor");
         }
-        else if(questionText.equals("사회복지학과") || questionText.equals("사복과") || questionText.equals("사복") || questionText.equals("ㅅㅂㄱ"))
+        else if(questionText.equals("사회복지학과") || questionText.equals("사복과") || questionText.equals("사복"))
         {
             //tbSetText.setText("사회복지학과 전화번호는 041-530-2509입니다.");
             DataBox("welfare");
         }
-        else if(questionText.equals("상담산업심리학과") || questionText.equals("상산과") || questionText.equals("상산") || questionText.equals("상담산업") || questionText.equals("ㅅㄷㅅㅇㅅㄹ"))
+        else if(questionText.equals("상담산업심리학과") || questionText.equals("상산과") || questionText.equals("상산"))
         {
             //tbSetText.setText("상담 산업심리학과 전화번호는 041-530-2568입니다.");
             DataBox("psychology");
         }
-        else if(questionText.equals("역사영상콘텐츠학부") || questionText.equals("역영콘과") || questionText.equals("역영콘") || questionText.equals("ㅇㅇㅋㄱ"))
+        else if(questionText.equals("역사영상콘텐츠학부") || questionText.equals("역영콘과") || questionText.equals("역영콘"))
         {
             //tbSetText.setText("역사 영상콘텐츠학부 전화번호는 041-530-2455입니다.");
             DataBox("hcc");
         }
-        else if(questionText.equals("미디어커뮤니케이션학부") || questionText.equals("미커과") || questionText.equals("미커") || questionText.equals("ㅁㅋㄱ"))
+        else if(questionText.equals("미디어커뮤니케이션학부") || questionText.equals("미커과") || questionText.equals("미커"))
         {
             //tbSetText.setText("미디어커뮤니케이션학부 전화번호는 041-530-2506/2054입니다.");
             DataBox("communication");
         }
-        else if(questionText.equals("법경찰학과") || questionText.equals("법경과") || questionText.equals("법경") || questionText.equals("ㅂㄱㄱ"))
+        else if(questionText.equals("법경찰학과") || questionText.equals("법경과") || questionText.equals("법경"))
         {
             //tbSetText.setText("법 경찰학과 전화번호는 041-530-8403/8404입니다.");
             DataBox("dlp");
         }
-        else if(questionText.equals("글로벌한국학과") || questionText.equals("글한과") || questionText.equals("글한") || questionText.equals("ㄱㅎㄱ"))
+        else if(questionText.equals("글로벌한국학과") || questionText.equals("글한과") || questionText.equals("글한"))
         {
             //tbSetText.setText("글로벌한국학과 전화번호는 041-530-2541입니다.");
             DataBox("gks");
         }
-        else if(questionText.equals("시각디자인학과") || questionText.equals("시디과") || questionText.equals("시디") || questionText.equals("ㅅㄷㄱ"))
+        else if(questionText.equals("시각디자인학과") || questionText.equals("시디과") || questionText.equals("시디"))
         {
             //tbSetText.setText("시각디자인학과 전화번호는 041-530-2594/2564입니다.");
             DataBox("design");
         }
-        else if(questionText.equals("행정공기업학과") || questionText.equals("행공과") || questionText.equals("행공") || questionText.equals("ㅎㄱㄱ"))
+        else if(questionText.equals("행정공기업학과") || questionText.equals("행공과") || questionText.equals("행공"))
         {
             //tbSetText.setText("행정공기업학과 전화번호는 041-530-2593입니다.");
             DataBox("public");
         }
-        else if(questionText.equals("외국어자율전공학부") || questionText.equals("외자부") || questionText.equals("외자") || questionText.equals("ㅇㅈㅂ"))
+        else if(questionText.equals("외국어자율전공학부") || questionText.equals("외자부") || questionText.equals("외자"))
         {
             //tbSetText.setText("외국어 자율전공학부 전화번호는 041-530-2424입니다.");
             DataBox("uem");
         }
-        else if(questionText.equals("경영학과") || questionText.equals("경영과") || questionText.equals("경영") || questionText.equals("ㄱㅇㄱ"))
+        else if(questionText.equals("경영학과") || questionText.equals("경영과") || questionText.equals("경영"))
         {
             //tbSetText.setText("경영학과 전화번호는 041-530-2507/2567입니다.");
             DataBox("mgt");
         }
-        else if(questionText.equals("IT경영학과") || questionText.equals("아이티경영과") || questionText.equals("아경") || questionText.equals("IT경영"))
+        else if(questionText.equals("IT경영학과") || questionText.equals("아이티경영과") || questionText.equals("아경"))
         {
             //tbSetText.setText("IT경영학과 전화번호는 041-530-2597입니다.");
             DataBox("itm");
         }
-        else if(questionText.equals("국제경제통상학과") || questionText.equals("국경통") || questionText.equals("국제경제통상") || questionText.equals("ㄱㅈㄱㅈㅌㅅ"))
+        else if(questionText.equals("국제경제통상학과") || questionText.equals("국경통"))
         {
             //tbSetText.setText("국제경제통상학과 전화번호는 041-530-2556입니다.");
             DataBox("economic");
         }
-        else if(questionText.equals("글로벌관광학과") || questionText.equals("글관과") || questionText.equals("글관") || questionText.equals("ㄱㄹㅂㄱㄱㅎㄱ"))
+        else if(questionText.equals("글로벌관광학과") || questionText.equals("글관과") || questionText.equals("글관"))
         {
             //tbSetText.setText("글로벌관광학과 전화번호는 041-530-2551/8561입니다.");
             DataBox("tour");
         }
-        else if(questionText.equals("국제관계학과") || questionText.equals("국관과") || questionText.equals("국관") || questionText.equals("ㄱㅈㄱㄱㅎㄱ"))
+        else if(questionText.equals("국제관계학과") || questionText.equals("국관과") || questionText.equals("국관"))
         {
             //tbSetText.setText("국제관계학과 전화번호는 041-530-2505입니다.");
             DataBox("international");
         }
-        else if(questionText.equals("신학과") || questionText.equals("신학") || questionText.equals("ㅅㅎㄱ"))
+        else if(questionText.equals("신학과") || questionText.equals("신학"))
         {
             //tbSetText.setText("신학과 전화번호는 041-530-2686입니다.");
             DataBox("theolove");
         }
-        else if(questionText.equals("제약생명공학과") || questionText.equals("제생과") || questionText.equals("제생") || questionText.equals("ㅈㅅㄱ"))
+        else if(questionText.equals("제약생명공학과") || questionText.equals("제생과") || questionText.equals("제생"))
         {
             //tbSetText.setText("제약생명공학과 전화번호는 041-530-2270/2251입니다.");
             DataBox("btpe");
         }
-        else if(questionText.equals("식품과학부") || questionText.equals("식과부") || questionText.equals("식품과학과") || questionText.equals("ㅅㄱㅂ"))
+        else if(questionText.equals("식품과학부") || questionText.equals("식과부") || questionText.equals("식품과학과"))
         {
             //tbSetText.setText("식품과학부 전화번호는 041-530-2278입니다.");
             DataBox("food");
         }
-        else if(questionText.equals("수산생명의학과") || questionText.equals("수생과") || questionText.equals("수생") || questionText.equals("ㅅㅅㄱ"))
+        else if(questionText.equals("수산생명의학과") || questionText.equals("수생과") || questionText.equals("수생"))
         {
             //tbSetText.setText("수산생명의학과 전화번호는 041-530-2280입니다.");
             DataBox("marine");
         }
-        else if(questionText.equals("간호학과") || questionText.equals("간호과") || questionText.equals("간학") || questionText.equals("ㄱㅎㅎㄱ"))
+        else if(questionText.equals("간호학과") || questionText.equals("간호과") || questionText.equals("간학"))
         {
             //tbSetText.setText("간호학과 전화번호는 041-530-2764입니다.");
             DataBox("nurs");
         }
-        else if(questionText.equals("물리치료학과") || questionText.equals("물치과") || questionText.equals("물치") || questionText.equals("ㅁㄹㅊㄹ"))
+        else if(questionText.equals("물리치료학과") || questionText.equals("물치과") || questionText.equals("물치"))
         {
             //tbSetText.setText("물리치료학과 전화번호는 041-530-2765입니다.");
             DataBox("physical");
         }
-        else if(questionText.equals("치위생학과") || questionText.equals("치위과") || questionText.equals("치위생") || questionText.equals("ㅊㅇㅅㅎㄱ"))
+        else if(questionText.equals("치위생학과") || questionText.equals("치위과") || questionText.equals("치위생"))
         {
             //tbSetText.setText("치위생학과 전화번호는 041-530-2766입니다.");
             DataBox("dental");
         }
-        else if(questionText.equals("응급구조학과") || questionText.equals("응구과") || questionText.equals("응구") || questionText.equals("ㅇㄱㄱㅈㅎㄱ"))
+        else if(questionText.equals("응급구조학과") || questionText.equals("응구과") || questionText.equals("응구"))
         {
             //tbSetText.setText("응급구조학과 전화번호는 041-530-2763입니다.");
             DataBox("emt");
         }
-        else if(questionText.equals("스포츠과학과") || questionText.equals("스과과") || questionText.equals("스과") || questionText.equals("ㅅㅍㅊㄱㅎㄱ"))
+        else if(questionText.equals("스포츠과학과") || questionText.equals("스과과") || questionText.equals("스과"))
         {
             //tbSetText.setText("스포츠과학과 전화번호는 041-530-2290/2919입니다.");
             DataBox("sports");
         }
-        else if(questionText.equals("무도경호학과") || questionText.equals("무경과") || questionText.equals("무경") || questionText.equals("ㅁㄷㄱㅎㅎㄱ"))
+        else if(questionText.equals("무도경호학과") || questionText.equals("무경과") || questionText.equals("무경"))
         {
             //tbSetText.setText("무도경호학과 전화번호는 041-530-2298/2272입니다.");
             DataBox("martial");
         }
-        else if(questionText.equals("건축학부") || questionText.equals("건축과") || questionText.equals("건축") || questionText.equals("ㄱㅊㅎㅂ"))
+        else if(questionText.equals("건축학부") || questionText.equals("건축과") || questionText.equals("건축"))
         {
             //tbSetText.setText("건축학부 전화번호는 041-530-2320/2652입니다.");
             DataBox("archi");
         }
-        else if(questionText.equals("건설시스템안전공학과") || questionText.equals("건안공과") || questionText.equals("건안") || questionText.equals("ㄱㅇㄱㄱ"))
+        else if(questionText.equals("건설시스템안전공학과") || questionText.equals("건안공과") || questionText.equals("건안"))
         {
             //tbSetText.setText("건설시스템안전공학과 전화번호는 041-530-2319입니다.");
             DataBox("cisse");
         }
-        else if(questionText.equals("기계공학과") || questionText.equals("기공과") || questionText.equals("기공") || questionText.equals("ㄱㄱㄱㅎㄱ"))
+        else if(questionText.equals("기계공학과") || questionText.equals("기공과") || questionText.equals("기공"))
         {
             //tbSetText.setText("기계공학과 전화번호는 041-530-2303입니다.");
             DataBox("mecha");
         }
-        else if(questionText.equals("정보통신공학과") || questionText.equals("정통과") || questionText.equals("정통") || questionText.equals("ㅈㅂㅌㅅㄱㅎㄱ"))
+        else if(questionText.equals("정보통신공학과") || questionText.equals("정통과") || questionText.equals("정통"))
         {
             //tbSetText.setText("정보통신공학과 전화번호는 041-530-2309/2308입니다.");
             DataBox("information");
         }
-        else if(questionText.equals("디스플레이반도체공학과") || questionText.equals("디반과") || questionText.equals("디반") || questionText.equals("ㄷㅂㄱ"))
+        else if(questionText.equals("디스플레이반도체공학과") || questionText.equals("디반과") || questionText.equals("디반"))
         {
             //tbSetText.setText("디스플레이반도체공학과 전화번호는 041-530-2208/2204입니다.");
             DataBox("display");
         }
-        else if(questionText.equals("전자공학과") || questionText.equals("전자과") || questionText.equals("전자") || questionText.equals("ㅈㅈㄱㅎㄱ"))
+        else if(questionText.equals("전자공학과") || questionText.equals("전자과") || questionText.equals("전자"))
         {
             //tbSetText.setText("전자공학과 전화번호는 041-530-2313/8094입니다.");
             DataBox("electric");
         }
-        else if(questionText.equals("신소재공학과") || questionText.equals("신소재과") || questionText.equals("신소재") || questionText.equals("ㅅㅅㅈㄱㅎㄱ"))
+        else if(questionText.equals("신소재공학과") || questionText.equals("신소재과") || questionText.equals("신소재"))
         {
             //tbSetText.setText("신소재공학과 전화번호는 041-530-2312/2306입니다.");
             DataBox("ame");
         }
-        else if(questionText.equals("환경생명화학공학과") || questionText.equals("환생화과") || questionText.equals("환생화") || questionText.equals("ㅎㄱㅎㄱ"))
+        else if(questionText.equals("환경생명화학공학과") || questionText.equals("환생화과") || questionText.equals("환생화"))
         {
             //tbSetText.setText("환경생명화학공학과 전화번호는 041-530-2314/2318입니다.");
             DataBox("ebce");
         }
-        else if(questionText.equals("산업경영공학과") || questionText.equals("산경과") || questionText.equals("산경") || questionText.equals("ㅅㅇㄱㅇㄱㅎㄱ"))
+        else if(questionText.equals("산업경영공학과") || questionText.equals("산경과") || questionText.equals("산경"))
         {
             //tbSetText.setText("산업경영공학과 전화번호는 041-530-2317입니다.");
             DataBox("ie");
         }
-        else if(questionText.equals("스마트자동차공학부") || questionText.equals("스자공과") || questionText.equals("스자공") || questionText.equals("ㅅㅁㅌㅈㄷㅊㄱㅎㅂ"))
+        else if(questionText.equals("스마트자동차공학부") || questionText.equals("스자공과") || questionText.equals("스자공"))
         {
             //tbSetText.setText("스마트자동차공학부 전화번호는 041-530-8330/8331입니다.");
             DataBox("smartcar");
         }
-        else if(questionText.equals("컴퓨터공학부") || questionText.equals("컴공과") || questionText.equals("컴공") || questionText.equals("ㅋㅍㅌㄱㅎㅂ"))
+        else if(questionText.equals("컴퓨터공학부") || questionText.equals("컴공과") || questionText.equals("컴공"))
         {
             //tbSetText.setText("컴퓨터공학부 전화번호는 041-530-2211~2213입니다.");
             DataBox("cs");
         }
-        else if(questionText.equals("AI소프트웨어학과") || questionText.equals("소웨과") || questionText.equals("소웨") || questionText.equals("ㅅㅍㅌㅇㅇㅎㄱ"))
+        else if(questionText.equals("AI소프트웨어학과") || questionText.equals("소웨과") || questionText.equals("소웨"))
         {
             //tbSetText.setText("AI소프트웨어학과 전화번호는 041-530-8480입니다.");
             DataBox("ais");
@@ -502,13 +503,13 @@ public class ChatbotHome extends AppCompatActivity
             //tbSetText.setText(IT교육학부 전화번호는 041-530-8589입니다.");
             DataBox("itedu");
         }
-        else if(questionText.equals("학사정보"))
+        else if(questionText.equals("학사정보") || questionText.equals("ㅎㅅㅈㅂ"))
         {
             //tbSetText.setText("https://lily.sunmoon.ac.kr/Page/Story/SMEvents.aspx");
             //DataBox("StudentInfo");
             ViewText("학사정보","https://lily.sunmoon.ac.kr/Page/Story/SMEvents.aspx");
         }
-        else if(questionText.equals("수강신청"))
+        else if(questionText.equals("수강신청") || questionText.equals("ㅅㄱㅅㅊ"))
         {
             //tbSetText.setText("https://sws.sunmoon.ac.kr/UA/Course/CourseUpdate.aspx");
             //DataBox("StudyAdd");
@@ -592,6 +593,7 @@ public class ChatbotHome extends AppCompatActivity
         tv_answer.setTextColor(Color.parseColor("#000000"));
         tv_answer.setBackgroundResource(R.drawable.chatbotmsg);
         tv_answer.setGravity(Gravity.LEFT);
+        tv_answer.setAutoLinkMask(Linkify.ALL);
         set_text.addView(tv_answer);
         layout.setBackgroundColor(0);
         layout.addView(set_text);

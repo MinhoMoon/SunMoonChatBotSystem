@@ -102,212 +102,212 @@ public class ChatbotHome extends AppCompatActivity
             //tbSetText.setText("오늘 맑아요");
             //DataBox("Weather");
         }
-        else if(questionText.equals("음식점"))//날씨
+        else if(questionText.equals("음식점") || questionText.equals("음식"))//날씨
         {
             //tbSetText.setText("학교주변에는 느티나무집, 이모네밥, 맘스터치, 화정관이 있습니다.");
             DataBox("F-000");
         }
-        else if(questionText.equals("화정관"))
+        else if(questionText.equals("화정관") || questionText.equals("ㅎㅈㄱ"))
         {
             //tbSetText.setText("화정관 전화번호는 0507-147-8226입니다.");
             DataBox("F-001");
         }
-        else if(questionText.equals("뚜따구치"))
+        else if(questionText.equals("뚜따구치") || questionText.equals("ㄸㄸㄱㅊ"))
         {
             //tbSetText.setText("뚜따구치 전화번호는 041-534-3357입니다.");
             DataBox("F-002");
         }
-        else if(questionText.equals("언니네식당"))
+        else if(questionText.equals("언니네식당") || questionText.equals("언니네") || questionText.equals("ㅇㄴㄴㅅㄷ"))
         {
             //tbSetText.setText("언니네식당 전화번호는 0507-1420-2240입니다.");
             DataBox("F-003");
         }
-        else if(questionText.equals("은화수식당"))
+        else if(questionText.equals("은화수식당") || questionText.equals("은화수") || questionText.equals("ㅇㅎㅅㅅㄷ"))
         {
             //tbSetText.setText("은화수식당 전화번호는 0507-147-8226입니다.");
             DataBox("F-004");
         }
-        else if(questionText.equals("도스마스"))
+        else if(questionText.equals("도스마스") || questionText.equals("ㄷㅅㅁㅅ"))
         {
             //tbSetText.setText("도스마스 전화번호는 041-544-8099입니다.");
             DataBox("F-005");
         }
-        else if(questionText.equals("한솥도시락"))
+        else if(questionText.equals("한솥도시락") || questionText.equals("한솥") || questionText.equals("ㅎㅅㄷㅅㄹ"))
         {
             //tbSetText.setText("한솥도시락 전화번호는 041-544-4530입니다.");
             DataBox("F-006");
         }
-        else if(questionText.equals("큰맘할매순대국"))
+        else if(questionText.equals("큰맘할매순대국") || questionText.equals("큰맘할매") || questionText.equals("순대국") || questionText.equals("할매순대국") || questionText.equals("ㅋㅁㅎㅁㅅㄷㄱ"))
         {
             //tbSetText.setText("큰맘할매순대국 전화번호는 0507-1435-0246입니다.");
             DataBox("F-007");
         }
-        else if(questionText.equals("김밥천국"))
+        else if(questionText.equals("김밥천국") || questionText.equals("ㄱㅂㅊㄱ"))
         {
             //tbSetText.setText("김밥천국 전화번호는 0507-1340-5855입니다.");
             DataBox("F-008");
         }
-        else if(questionText.equals("느티나무집"))
+        else if(questionText.equals("느티나무집") || questionText.equals("느티나무") || questionText.equals("ㄴㅌㄴㅁㅈ"))
         {
             //tbSetText.setText("느티나무집 전화번호는 0507-1403-2141입니다.");
             DataBox("F-009");
         }
-        else if(questionText.equals("59쌀피자"))
+        else if(questionText.equals("59쌀피자") || questionText.equals("오구쌀피자") || questionText.equals("ㅇㄱㅆㅍㅈ") || questionText.equals("쌀피자"))
         {
             //tbSetText.setText("59쌀피자 전화번호는 041-545-8259입니다.");
             DataBox("F-010");
         }
-        else if(questionText.equals("두찜"))
+        else if(questionText.equals("두찜") || questionText.equals("ㄷㅉ"))
         {
             //tbSetText.setText("두찜 전화번호는 041-546 7737입니다.");
             DataBox("F-011");
         }
-        else if(questionText.equals("몬스터꼬맹이김밥"))
+        else if(questionText.equals("몬스터꼬맹이김밥") || questionText.equals("몬스터꼬맹이") || questionText.equals("꼬맹이김밥") || questionText.equals("ㅁㅅㅌㄲㅁㅇㄱㅂ"))
         {
             //tbSetText.setText("몬스터꼬맹이김밥 전화번호는 041-542-6533입니다.");
             DataBox("F-012");
         }
-        else if(questionText.equals("메콩타이"))
+        else if(questionText.equals("메콩타이") || questionText.equals("ㅁㅋㅌㅇ"))
         {
             //tbSetText.setText("메콩타이 전화번호는 041-532-7733입니다.");
             DataBox("F-013");
         }
-        else if(questionText.equals("푸라닭"))
+        else if(questionText.equals("푸라닭") || questionText.equals("ㅍㄹㄷ"))
         {
             //tbSetText.setText("푸라닭 전화번호는 041-533-9206입니다.");
             DataBox("F-014");
         }
-        else if(questionText.equals("처갓집"))
+        else if(questionText.equals("처갓집") || questionText.equals("ㅊㄱㅈ"))
         {
             //tbSetText.setText("처갓집 전화번호는 041-548-9997입니다.");
             DataBox("F-015");
         }
-        else if(questionText.equals("본도시락"))
+        else if(questionText.equals("본도시락") || questionText.equals("ㅂㄷㅅㄹ"))
         {
             //tbSetText.setText("본도시락 전화번호는 0507-1307-4282입니다.");
             DataBox("F-016");
         }
-        else if(questionText.equals("등촌샤브샤브"))
+        else if(questionText.equals("등촌샤브샤브") || questionText.equals("ㄷㅊㅅㅂㅅㅂ"))
         {
             //tbSetText.setText("등촌샤브샤브 전화번호는 041-548-2253입니다);
             DataBox("F-017");
         }
-        else if(questionText.equals("서서갈비"))
+        else if(questionText.equals("서서갈비") || questionText.equals("ㅅㅅㄱㅂ"))
         {
             //tbSetText.setText("서서갈비 전화번호는 0507-1407-4862입니다.");
             DataBox("F-018");
         }
-        else if(questionText.equals("두부랑가마솥손두부"))
+        else if(questionText.equals("두부랑가마솥손두부") || questionText.equals("두부랑가마솥") || questionText.equals("가마솥손두부") || questionText.equals("ㄷㅂㄹㄱㅁㅅㅅㄷㅂ"))
         {
             //tbSetText.setText("두부랑 가마솥 손두부 전화번호는 0507-1368-3116입니다.");
             DataBox("F-019");
         }
-        else if(questionText.equals("멘야미쯔리"))
+        else if(questionText.equals("멘야미쯔리") || questionText.equals("ㅁㅇㅁㅉㄹ"))
         {
             //tbSetText.setText("멘야미쯔리 전화번호는 041-544-6907입니다.");
             DataBox("F-020");
         }
-        else if(questionText.equals("더진국수육국밥"))
+        else if(questionText.equals("더진국수육국밥") || questionText.equals("더진국수육") || questionText.equals("수육국밥") || questionText.equals("ㄷㅈㄱㅅㅇㄱㅂ"))
         {
             //tbSetText.setText("더진국수육국밥 전화번호는 041-532-5738입니다.");
             DataBox("F-021");
         }
-        else if(questionText.equals("BHC치킨"))
+        else if(questionText.equals("BHC치킨") || questionText.equals("비에이치씨치킨") || questionText.equals("BHC") || questionText.equals("bhc") || questionText.equals("bhc치킨"))
         {
             //tbSetText.setText("BHC치킨 전화번호는 041-531-0707입니다.");
             DataBox("F-022");
         }
-        else if(questionText.equals("교촌치킨"))
+        else if(questionText.equals("교촌치킨") || questionText.equals("ㄱㅊㅊㅋ") || questionText.equals("교촌"))
         {
             //tbSetText.setText("교촌치킨 전화번호는 041-532-1995입니다.");
             DataBox("F-023");
         }
-        else if(questionText.equals("굽네치킨"))
+        else if(questionText.equals("굽네치킨") || questionText.equals("ㄱㄴㅊㅋ") || questionText.equals("굽네"))
         {
             //tbSetText.setText("굽네치킨 전화번호는 041-542-9492입니다.");
             DataBox("F-024");
         }
-        else if(questionText.equals("원주통닭"))
+        else if(questionText.equals("원주통닭") || questionText.equals("ㅇㅈㅌㄷ") || questionText.equals("통닭"))
         {
             //tbSetText.setText("원주통닭 전화번호는 041-549-3330입니다.");
             DataBox("F-025");
         }
-        else if(questionText.equals("족발야시장"))
+        else if(questionText.equals("족발야시장") || questionText.equals("ㅈㅂㅇㅅㅈ") || questionText.equals("야시장"))
         {
             //tbSetText.setText("족발야시장 전화번호는 041-541-4969입니다.");
             DataBox("F-026");
         }
-        else if(questionText.equals("단골집"))
+        else if(questionText.equals("단골집") || questionText.equals("ㄷㄱㅈ"))
         {
             //tbSetText.setText("단골집 전화번호는 041-534-3218입니다.");
             DataBox("F-027");
         }
-        else if(questionText.equals("이자돌"))
+        else if(questionText.equals("이자돌") || questionText.equals("ㅇㅈㄷ"))
         {
             //tbSetText.setText("연탄집 전화번호는 0507-1315-9404입니다.");
             DataBox("F-028");
         }
-        else if(questionText.equals("연탄집"))
+        else if(questionText.equals("연탄집") || questionText.equals("ㅇㅌㅈ"))
         {
             //tbSetText.setText("연탄집 전화번호는 0507-1315-9404입니다.");
             DataBox("F-029");
         }
-        else if(questionText.equals("신의주찹쌀순대"))
+        else if(questionText.equals("신의주찹쌀순대") || questionText.equals("신의주찹쌀") || questionText.equals("찹쌀순대") || questionText.equals("ㅅㅇㅈㅊㅆㅅㄷ"))
         {
             //tbSetText.setText("신의주찹쌀순대 전화번호는 041-546-5421입니다.");
             DataBox("F-030");
         }
-        else if(questionText.equals("택이네조개찜"))
+        else if(questionText.equals("택이네조개찜") || questionText.equals("택이네조개") || questionText.equals("조개찜") || questionText.equals("ㅌㅇㄴㅈㄱㅉ"))
         {
             //tbSetText.setText("택이네조개찜 전화번호는 0507-1330-8294입니다.");
             DataBox("F-031");
         }
-        else if(questionText.equals("냉삼집"))
+        else if(questionText.equals("냉삼집") || questionText.equals("ㄴㅅㅈ") || questionText.equals("냉삼"))
         {
             //tbSetText.setText("냉삼집 전화번호는 0507-1335-8987입니다.");
             DataBox("F-032");
         }
-        else if(questionText.equals("터를리"))
+        else if(questionText.equals("터를리") || questionText.equals("ㅌㄹㄹ"))
         {
             //tbSetText.setText("터를리 전화번호는 041-533-5545입니다.");
             DataBox("F-033");
         }
-        else if(questionText.equals("79대포"))
+        else if(questionText.equals("79대포") || questionText.equals("친구대포") || questionText.equals("칠구대포") || questionText.equals("ㅊㄱㄷㅍ") || questionText.equals("79ㄷㅍ"))
         {
             //tbSetText.setText("79대포 전화번호는 0507-1304-2299입니다.");
             DataBox("F-034");
         }
-        else if(questionText.equals("진사또"))
+        else if(questionText.equals("진사또") || questionText.equals("ㅈㅅㄸ"))
         {
             //tbSetText.setText("진사또 전화번호는 041-545-3457입니다.");
             DataBox("F-035");
         }
-        else if(questionText.equals("짬뽕지존"))
+        else if(questionText.equals("짬뽕지존") || questionText.equals("짬뽕") || questionText.equals("ㅉㅃㅈㅈ"))
         {
             //tbSetText.setText("짬뽕지존 전화번호는 0507-1356-5161입니다.");
             DataBox("F-036");
         }
-        else if(questionText.equals("피그펍돈까스"))
+        else if(questionText.equals("피그펍돈까스") || questionText.equals("퍼그팝") || questionText.equals("ㅍㄱㅍㄷㄲㅅ") || questionText.equals("퍼그팝돈까쓰"))
         {
             //tbSetText.setText("피그펍돈까스 전화번호는 041-541-8833입니다.");
             DataBox("F-037");
         }
-        else if(questionText.equals("수호두파이"))
+        else if(questionText.equals("수호두파이") || questionText.equals("ㅅㅎㄷㅍㅇ") || questionText.equals("두파이"))
         {
             //tbSetText.setText("수호두파이 전화번호는 041-545-8295입니다.");
             DataBox("F-038");
         }
-        else if(questionText.equals("노걸대감자탕"))
+        else if(questionText.equals("노걸대감자탕") || questionText.equals("ㄴㄱㄷㄱㅈㅌ") || questionText.equals("노걸대"))
         {
             //tbSetText.setText("노걸대감자탕 전화번호는 041-533-7402입니다.");
             DataBox("F-039");
         }
-        else if(questionText.equals("윤가네부대찌개"))
+        else if(questionText.equals("윤가네부대찌개") || questionText.equals("윤가네") || questionText.equals("윤가네부대찌게") || questionText.equals("ㅇㄱㄴㅂㄷㅉㄱ"))
         {
             //tbSetText.setText("윤가네 부대찌개 전화번호는 041-532-0414입니다.");
             DataBox("F-040");
         }
-        else if(questionText.equals("제주복돼지"))
+        else if(questionText.equals("제주복돼지") || questionText.equals("ㅈㅈㅂㄷㅈ") || questionText.equals("복돼지"))
         {
             //tbSetText.setText("제주복돼지 전화번호는 041-534-0286입니다.");
             DataBox("F-041");

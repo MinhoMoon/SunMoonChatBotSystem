@@ -29,9 +29,9 @@ public class MainActivity extends AppCompatActivity
 
 
         firebaseAuth = FirebaseAuth.getInstance();
-        tbEmail = (EditText) findViewById(R.id.get_id); // get_id에 입력된 값을 tbEmail으로 연동한다.
-        tbPassword = (EditText) findViewById(R.id.get_pass); // get_pass에 입력된 값을 tbPassword로 연동한다.
-        btLogin = (Button) findViewById(R.id.bt_log); // bt_log 버튼을 btLogin으로 연동한다.
+        tbEmail = (EditText) findViewById(R.id.set_id); // get_id에 입력된 값을 tbEmail으로 연동한다.
+        tbPassword = (EditText) findViewById(R.id.set_pass); // get_pass에 입력된 값을 tbPassword로 연동한다.
+        btLogin = (Button) findViewById(R.id.bt_dbreg); // bt_log 버튼을 btLogin으로 연동한다.
         //btRegister = (Button) findViewById(R.id.bt_reg); // bt_reg 버튼을 btRegister로 연동한다.
 
         btLogin.setOnClickListener(new View.OnClickListener()
@@ -91,6 +91,6 @@ public class MainActivity extends AppCompatActivity
 
     public void goRegister(View v) // 회원가입 화면으로 이동시킨다.
     {
-        startActivity(new Intent(this, Register.class));
+       startActivity(new Intent(this, Register.class));
     }
 }

@@ -1,83 +1,141 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Register">
+    tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="313dp"
-        android:layout_height="47dp"
-        android:layout_marginTop="304dp"
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_login" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
         android:gravity="center"
-        android:text="선문챗봇"
-        android:textColor="#8C1FD1"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/schoollogo" />
+        android:orientation="vertical">
 
-    <EditText
-        android:id="@+id/set_id"
-        android:layout_width="314dp"
-        android:layout_height="48dp"
-        android:layout_marginTop="24dp"
-        android:background="#5EBA5CCF"
-        android:ems="10"
-        android:hint="이메일을 입력하세요."
-        android:inputType="textPersonName"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="148dp"
+            android:orientation="horizontal">
 
-    <EditText
-        android:id="@+id/set_pass"
-        android:layout_width="313dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="20dp"
-        android:background="#5EBA5CCF"
-        android:ems="10"
-        android:hint="비밀번호를 입력하세요."
-        android:inputType="textPassword"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/set_id" />
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
-    <Button
-        android:id="@+id/bt_regreset"
-        android:layout_width="313dp"
-        android:layout_height="61dp"
-        android:layout_marginTop="20dp"
-        android:backgroundTint="#BA5CCF"
-        android:text="Reset"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/bt_dbreg" />
+                <ImageView
+                    android:id="@+id/imageView6"
+                    android:layout_width="74dp"
+                    android:layout_height="62dp"
+                    android:layout_marginStart="92dp"
+                    android:layout_marginLeft="92dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.651"
+                    app:srcCompat="@drawable/logo" />
 
-    <Button
-        android:id="@+id/bt_dbreg"
-        android:layout_width="313dp"
-        android:layout_height="61dp"
-        android:layout_marginTop="20dp"
-        android:backgroundTint="#BA5CCF"
-        android:text="Register"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/set_pass" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+                <TextView
+                    android:layout_width="169dp"
+                    android:layout_height="56dp"
+                    android:layout_margin="?actionBarSize"
+                    android:layout_marginEnd="68dp"
+                    android:layout_weight="9"
+                    android:text="Sign up"
+                    android:textColor="#fff"
+                    android:textSize="40sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/set_id"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:layout_margin="20dp"
+            android:background="@drawable/rounded_corner"
+            android:hint="Email"
+            android:paddingStart="10dp"
+            android:paddingLeft="10dp"
+            android:textColor="#fff"
+            android:textColorHint="#eee"
+            android:textSize="17sp" />
+
+        <EditText
+            android:id="@+id/set_pass"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:layout_margin="20dp"
+            android:background="@drawable/rounded_corner"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:paddingStart="10dp"
+            android:paddingLeft="10dp"
+            android:textColor="#fff"
+            android:textColorHint="#eee"
+            android:textSize="17sp" />
+
+        <Button
+            android:id="@+id/bt_dbreg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_corner_button"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="sign up"
+            android:textColor="#AFA8A8"
+            app:backgroundTint="#FFF8F8" />
+
+        <TextView
+            android:id="@+id/dawdwq"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:onClick="goReset"
+            android:text="or reset?"
+            android:textColor="#fff"
+            tools:ignore="OnClick" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="91dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="SUNMOONCHATBOT"
+            android:textColor="#3C3A3A"
+            android:textColorHint="#020202"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+</RelativeLayout>

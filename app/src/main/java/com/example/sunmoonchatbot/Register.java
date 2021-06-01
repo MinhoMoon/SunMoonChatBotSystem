@@ -19,7 +19,7 @@ public class Register extends AppCompatActivity
 {
     FirebaseAuth firebaseAuth;
     EditText tbRegEmail, tbRegPass;
-    Button btSetRegister, btSetReset;
+    Button btSetRegister;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -31,7 +31,6 @@ public class Register extends AppCompatActivity
         tbRegEmail = (EditText) findViewById(R.id.set_id); // set_id에 입력된 값을 tbRegEmail으로 연동한다.
         tbRegPass = (EditText) findViewById(R.id.set_pass); // set_pass에 입력된 값을 tbRegPass으로 연동한다.
         btSetRegister = (Button) findViewById(R.id.bt_dbreg); // bt_dbreg에 입력된 값을 btSetRegister으로 연동한다.
-        btSetReset = (Button) findViewById(R.id.bt_regreset); // bt_regreset에 입력된 값을 btSetReset으로 연동한다.
 
         btSetRegister.setOnClickListener(new View.OnClickListener()
         { // 회원가입 버튼을 클릭하면 실행됨
@@ -40,15 +39,6 @@ public class Register extends AppCompatActivity
             {
                 // 회원가입 버튼 클릭하면 실행 될 함수 작성
                 goSetRegister();
-            }
-        });
-        btSetReset.setOnClickListener(new View.OnClickListener()
-        { // 리셋 버튼을 클릭하면 실행됨
-            @Override
-            public void onClick(View v)
-            {
-                // 리셋 버튼 클릭하면 실행 될 함수 작성
-                goSetReset();
             }
         });
     }
@@ -88,7 +78,7 @@ public class Register extends AppCompatActivity
                 });
     }
 
-    private void goSetReset() // 이메일과 패스워드 입력칸에 입력된 값 초기화 진행한다.
+    public void goReset(View v) // 이메일과 패스워드 입력칸에 입력된 값 초기화 진행한다.
     {
         tbRegEmail.setText("");
         tbRegPass.setText("");

@@ -35,6 +35,7 @@ public class ChatbotHome extends AppCompatActivity
     EditText tbSendText;
     Button getSend;
     ScrollView getScroll;
+    boolean enquete = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -519,6 +520,19 @@ public class ChatbotHome extends AppCompatActivity
             //tbSetText.setText("https://sws.sunmoon.ac.kr/UA/Course/CourseUpdate.aspx");
             //DataBox("StudyAdd");
             ViewText("e강의동","https://lms.sunmoon.ac.kr/ilos/main/main_form.acl");
+        }
+        else if(questionText.equals("설문지") || questionText.equals("ㅅㅁㅈ"))
+        {
+            //tbSetText.setText("https://sws.sunmoon.ac.kr/UA/Course/CourseUpdate.aspx");
+            //DataBox("StudyAdd");
+            if(enquete == false)
+            {
+                ViewText("설문지","현재 진행중인 설문이 없습니다.");
+            }
+            else
+            {
+                ViewText("설문지","현재 진행중인 설문입니다. \nURL: https://forms.gle/Tw9GWH35KbyGcy5r8");
+            }
         }
         else
         {

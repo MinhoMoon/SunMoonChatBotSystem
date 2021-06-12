@@ -13,17 +13,14 @@
         android:layout_weight="9"
         android:orientation="vertical">
 
-        <TextView
-            android:id="@+id/textView"
+        <Spinner
+            android:id="@+id/rankmenu"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="#F6DCDC"
-            android:gravity="center"
-            android:text="오늘의 추천 서비스"
-            android:textColor="#9C27B0"
-            android:textSize="20sp"
-            android:textStyle="bold" />
+            android:background="#F4BFBF"
+            android:scrollbarSize="20dp" />
+
     </LinearLayout>
 
     <LinearLayout

@@ -17,7 +17,9 @@
             android:id="@+id/menuItem"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1" />
+            android:layout_weight="1"
+            android:background="#F4BFBF"
+            android:scrollbarSize="20dp" />
     </LinearLayout>
 
     <LinearLayout

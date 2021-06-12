@@ -39,7 +39,7 @@ public class ChatbotHome extends AppCompatActivity
     EditText tbSendText;
     Button getSend;
     ScrollView getScroll;
-    boolean enquete = false;
+    boolean enquete = true;
     String[] item = {"홈","오늘의 추천메뉴"};
     Spinner spinner;
     boolean erCk = true;

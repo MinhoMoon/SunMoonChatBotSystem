@@ -8,18 +8,29 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Spinner;
+import android.widget.TextView;
 
 public class Category extends AppCompatActivity {
     String[] item = {"오늘의 추천메뉴","홈"};
     Spinner spinner;
     boolean erCk = true;
     Intent it;
+
+    TextView foodText;
+    Data dc = new Data();
+
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.activity_category);
+        foodText = (TextView)findViewById(R.id.push);
         spinner = (Spinner)findViewById(R.id.rankmenu);
+
+        foodText.setText(dc.getFood());
+
         ArrayAdapter<String> adapter;
         adapter = new ArrayAdapter<String>(this, android.R.layout.simple_dropdown_item_1line, item);
         spinner.setAdapter(adapter);

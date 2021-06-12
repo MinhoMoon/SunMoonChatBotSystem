@@ -1,8 +1,9 @@
 package com.example.sunmoonchatbot;
 
 public class Data {
-    public void foodRank()
+    public String getFood()
     {
-        String food;
+        String food = "오늘 추천메뉴다!";
+        return food;
     }
 }

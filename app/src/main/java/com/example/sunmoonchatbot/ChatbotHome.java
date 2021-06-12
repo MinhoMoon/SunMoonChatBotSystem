@@ -555,7 +555,7 @@ public class ChatbotHome extends AppCompatActivity
         {
             //tbSetText.setText("https://sws.sunmoon.ac.kr/UA/Course/CourseUpdate.aspx");
             //DataBox("StudyAdd");
-            ViewText("수강신청","https://sws.sunmoon.ac.kr/UA/Course/CourseUpdate.aspx");
+            ViewText("수강신청","https://sws.sunmoon.ac.kr/login.aspx");
         }
         else if(questionText.equals("e강의동") || questionText.equals("E강의동"))
         {

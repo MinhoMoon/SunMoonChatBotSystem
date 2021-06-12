@@ -4,6 +4,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.os.StrictMode;
@@ -11,10 +12,13 @@ import android.text.util.Linkify;
 import android.view.Gravity;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.ScrollView;
+import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 import Weather.Weather;
@@ -36,6 +40,10 @@ public class ChatbotHome extends AppCompatActivity
     Button getSend;
     ScrollView getScroll;
     boolean enquete = false;
+    String[] item = {"홈","오늘의 추천메뉴"};
+    Spinner spinner;
+    boolean erCk = true;
+    Intent it;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -51,6 +59,40 @@ public class ChatbotHome extends AppCompatActivity
         tbSendText = (EditText) findViewById(R.id.get_sendtext); // 질문내용을 입력받는다.
         getSend = (Button) findViewById(R.id.get_send); // 버튼을 클릭하면 답변처리를 진행한다.
         getScroll = (ScrollView) findViewById(R.id.scroll);
+
+        spinner = (Spinner)findViewById(R.id.menuItem);
+        ArrayAdapter<String> adapter;
+        adapter = new ArrayAdapter<String>(this, android.R.layout.simple_dropdown_item_1line, item);
+        spinner.setAdapter(adapter);
+        spinner.setSelection(0);
+        spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener()// 스피너 메뉴 이동
+        {
+            @Override
+            public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l)
+            {
+                if(erCk)
+                {
+                    erCk = false;
+                }
+                else
+                {
+                    if(i==0)
+                    {
+                        goHome();
+                    }
+                    else if(i==1)
+                    {
+                        goRank();
+                    }
+                }
+            }
+            @Override
+            public void onNothingSelected(AdapterView<?> adapterView)
+            {
+
+            }
+        });
+
         WelcomeText();
         getSend.setOnClickListener(new View.OnClickListener()
         {
@@ -625,5 +667,15 @@ public class ChatbotHome extends AppCompatActivity
                 getScroll.fullScroll(ScrollView.FOCUS_DOWN);
             }
         });
+    }
+    void goHome()
+    {
+        it = new Intent(this, ChatbotHome.class);
+        startActivity(it);
+    }
+    void goRank()
+    {
+        it = new Intent(this, Category.class);
+        startActivity(it);
     }
 }

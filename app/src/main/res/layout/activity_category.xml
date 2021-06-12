@@ -35,7 +35,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:gravity="center"
-            android:text="오늘의 메뉴를 추천해드립니다.\n 오늘은 짜장면이 어떠신가요?"
+            android:text="None"
             android:textColor="#302F2F"
             android:textSize="16sp" />
     </LinearLayout>
